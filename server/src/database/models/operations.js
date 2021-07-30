@@ -1,6 +1,6 @@
 module.exports = (sequelize, dataTypes) => {
 
-    let alias = "Operation"
+    let alias = "Operations"
 
     let cols = {
         id:{
@@ -28,7 +28,7 @@ module.exports = (sequelize, dataTypes) => {
     }
 
     let config = {
-        tableName: "operation",
+        tableName: "operations",
         timestamps: false
     }
 
