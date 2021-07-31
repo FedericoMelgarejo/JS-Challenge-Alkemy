@@ -16,6 +16,25 @@ const operationsController = {
             })
 
     },
+//GET SINGLE OPERATION
+    getSingleOperation: function (req, res) {
+        db.Operations.findOne({
+            where: {
+                id: req.params.id
+            }
+        })
+            .then(function (operation) {
+                if (operation) {
+                    res.send(operation)
+                } else {
+                    res.send({ msg: 'The operation does not exist' })
+                }
+            })
+            .catch(errors => {
+                console.log(errors)
+            })
+
+    },
     //CREATE
     createOperation: function (req, res) {
         db.Operations.create({

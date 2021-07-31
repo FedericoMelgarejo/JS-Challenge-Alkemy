@@ -5,6 +5,8 @@ const operationsController = require('../controllers/operationsController')
 /* Routes */
 //GET ALL OPERATIONS
 router.get('/operation/list', operationsController.getOperations );
+//GET SINGLE OPERATION
+router.get('/operation/:id', operationsController.getSingleOperation );
 //CREATE
 router.post('/operation/create', operationsController.createOperation );
 //UPDATE
