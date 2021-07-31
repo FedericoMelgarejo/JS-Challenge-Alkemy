@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Balance from "./balance";
 import { Button, Table, Alert, Form, Modal } from "react-bootstrap";
 import { axios } from "./axios"
 
